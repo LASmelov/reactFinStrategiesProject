@@ -1,0 +1,150 @@
+.App {
+    /* background: linear-gradient(90deg, #003337 0%, #030118 100%), #FFF; */
+    height: 1100px;
+    margin: -10px;
+}
+
+
+
+
+h1 {
+    color: #FFF;
+    margin: 0px;
+    padding: 50px;
+    text-align: center;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.arrow {
+
+    width: 60px;
+    height: 90px;
+
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 999;
+}
+
+.arrow.left {
+    top: 40%;
+    left: 30px;
+
+}
+
+.arrow.right {
+    top: 40%;
+    right: 30px;
+    border: none;
+}
+
+.sectionSlider {
+    margin-left: 120px;
+    justify-content: center;
+    width: 85%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.sectionSlider .slider {
+    display: flex;
+
+    flex-direction: row;
+    gap: 100px;
+    position: relative;
+    left: 0;
+
+    width: 75%;
+    height: 100%;
+
+    transition: all 0.5s ease-in-out;
+
+
+}
+
+.sectionSlider .slider .card {
+
+
+    position: relative;
+    width: 340px;
+    height: 390px;
+    background-color: #ffffff;
+    padding: 20px 24px;
+
+
+    margin: 0;
+    border-radius: 65.067px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    h4 {
+        color: #003337;
+
+        text-align: center;
+
+        font-size: 33.835px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    h5 {
+        color: #003337;
+
+        text-align: center;
+
+        font-size: 23.424px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+}
+
+hr {
+    color: #00000000;
+    width: 306.8px;
+    height: 1.301px;
+}
+
+
+
+.sectionSlider .slider .card.selected {
+    background-color: #BDFCBD;
+}
+
+.buttonresult {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+
+.buttonresult button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 339px;
+    height: 77px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    border: 3px solid #FFF;
+    background: #003337;
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}

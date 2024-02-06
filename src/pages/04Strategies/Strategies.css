@@ -1,0 +1,360 @@
+body {
+    margin: 0 auto;
+    
+}
+
+.App{
+    height: 2147.625px;
+}
+
+li {
+    list-style-type: none;
+    height: 0px;
+
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 334.483px;
+height: 514.589px;
+    perspective: 1000px;
+
+
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-inner-flipped {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 30px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background: linear-gradient(90deg, #59d17b 0%, #92fd71 100%);
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.button__frontCard {
+    margin-top: 70px;
+    align-self: center;
+    width: 274.448px;
+height: 34.306px;
+
+    border-radius: 25px;
+    background-color: #59d17b;
+    border: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.container {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 300.483px;
+    height: 400.589px;
+    background-color: white;
+    border-radius: 35px;
+    color: black;
+margin-top: 40px;
+
+    background-color: rgba(255, 255, 255, 0.50);
+}
+
+.strategy__li {
+
+    margin-right: 10px;
+}
+
+.help__title {
+    position: absolute;
+    left: -17px;
+
+    top: 80px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    background-color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 334.483px;
+}
+
+
+.help__title span {
+    color: #000;
+    font-size: 28.047px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25.643px;
+}
+
+
+
+.strategy__li li {
+    list-style-type: disc;
+    text-align: left;
+    margin: 0 0 20px 0;
+
+}
+
+.flip-card-back__inner {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.strategy__back-title {
+margin-top: 20px;
+padding-bottom:80px;
+color: #000;
+font-size: 27px;
+font-style: normal;
+font-weight: 700;
+line-height: 25.643px;
+}
+
+ .main__title {
+   margin: 50px;
+} 
+
+.h1grin{
+color: #2CE38C;
+text-align: center;
+font-size: 87px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+letter-spacing: 8.7px;
+padding: 0px;
+}
+
+.h1white{
+    color: #FFF;
+
+    text-align: center;
+    font-size: 87px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -6.09px;
+    padding: 0px;
+}
+
+
+.not-main-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.not-main-title h3{
+    color: #FFF;
+    text-align: center;
+    font-size: 34.306px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.button__backCard {
+    align-self: center;
+    width: 170px;
+    height: 42px;
+    border-radius: 25px;
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+
+.strategy__card-image {
+    border-bottom: 4px solid #59d17b;
+}
+
+.strategy__card-title {
+    color: black;
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 35px;
+}
+
+.strategy__card-description {
+    font-size: 24px;
+    font-weight: 100;
+    margin-top: 30px;
+}
+
+.arrow {
+
+    width: 60px;
+    height: 90px;
+
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 999;
+}
+
+.arrow.left {
+    top: 50%;
+    left: 30px;
+
+}
+
+.arrow.right {
+    top: 50%;
+    right: 30px;
+    border: none;
+}
+
+
+.card-type{
+    position: relative;
+}
+
+.sectionSlider {
+    margin-left: 120px;
+    justify-content: center;
+    width: 85%;
+    height: 540px;
+    overflow: hidden;
+}
+
+.sectionSlider .slider {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    position: relative;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+/* slider2 */
+
+
+.card-answer{
+    position: relative;
+}
+
+.arrows2 {
+    visibility: visible;
+    width: 97%;
+    height: 90px;
+    top: 50%;
+    left: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    padding: 0px;
+}
+
+.arrow2.left2 {
+    justify-content: flex-start;
+    top: 40%;
+    left: 0;
+    border: none;
+    padding: 0px;
+    z-index: 999;
+    height: 92px;
+}
+
+.arrow2.right2 {
+    justify-content: flex-end;
+    top: 40%;
+    right: 0;
+    border: none;
+    padding: 0px;
+    z-index: 999;
+    height: 92px;
+}
+
+.sectionSlider2 {
+    margin-left: 120px;
+    justify-content: center;
+    width: 85%;
+    height: 540px;
+    overflow: hidden;
+}
+
+.sectionSlider2 .slider2 {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    position: relative;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.strategy__card {
+    border-radius: 30px;
+}
+
+.Big-hr{
+width: 1693px;
+height: 4px;
+border-radius: 5px;
+background: #D9D9D9;
+margin-top: 50px;
+}
